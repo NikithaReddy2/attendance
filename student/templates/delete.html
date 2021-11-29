@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h2>Are you sure you want to delete the entry?</h2>
+    <form  method="post">
+      {% csrf_token %}
+      <input type="submit" name="" value="confirm delete">
+       <a href="http://127.0.0.1:8000/display/">NO</a>
+    </form>
+  </body>
+</html>

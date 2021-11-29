@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Attendance Details</h1>
+    {% csrf_token %}
+    {% for i in stud %}
+    studentUsn:{{i.studentUsn}}<br>
+    studentName:{{i.studentName}}<br>
+    semester:{{i.sem}}<br>
+    <a href="http://127.0.0.1:8000/update/{{i.id}}">Update</a><br>
+    <a href="http://127.0.0.1:8000/delete/{{i.id}}">Delete</a><br><br><br>
+    {% endfor %}
+  </body>
+</html>

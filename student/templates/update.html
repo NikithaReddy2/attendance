@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form method="post">
+      {% csrf_token %}
+      <!-- {{ stud.as_p }} -->
+      studentUsn:
+      <input type="text" name="USN" value="{{stud.studentUsn}}"><br>
+      studentName:
+      <input type="text" name="studentName" value="{{stud.studentName}}"><br>
+      semester:
+      <input type="text" name="semester" value="{{stud.sem}}"><br>
+      <input type="submit" name="" value="Update">
+    </form>
+  </body>
+</html>
